@@ -6,9 +6,23 @@ body {
 
 }
 
+#contenido {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  webkit-flex-direction: column;
+  display: -moz-flex;
+  -moz-flex-direction: column;
+  animation: sliderin 1s;
+}
+
 img {
   box-shadow: 2px 2px 2px #02010a;
 }
+
+
 
 header {
   width: 100%;
@@ -50,24 +64,80 @@ li{
   text-decoration-line: none;
 }
 
-#contenido {
-  width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  display: -webkit-flex;
-  webkit-flex-direction: column;
-  display: -moz-flex;
-  -moz-flex-direction: column;
-  animation: sliderin 1s;
-}
 
-#cuerpo {
+
+#contenedor1 {
   width: 100%;
-  height: 440px;
+
   background-color: #82c3a6;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-  webkit-flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+#contenedor1 img {
+  width: 90%;
+  height: 400px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+}
+
+#contenedor2 {
+  display: flex;
+	flex-flow: row;
+	background-color: #d5c75f;
+	width: 100%;
+
+}
+
+#contenedor2 .izquierda {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  float: left;
+  display: block;
+  width: 91%;
+  height: 250px;
+}
+
+#contenedor2 .derecha {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  float: right;
+  display: block;
+  width: 114%;
+  height: 250px;
+}
+
+#contenedor3 {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: #C6d5c5;
+  width: 100%;
+
+  border-radius: 0px 0px 10px 10px;
+  font-size: 1em;
+
+
+}
+#contenedor3 h1 {
+  text-align: center;
+}
+
+#contenedor3 .boxfooter {
+  width: 25%;
+  margin: 10px;
+  border: 1px solid black;
+
+
+}
+
+#contenedor3 img {
+  width: 30%;
+
+
 }
