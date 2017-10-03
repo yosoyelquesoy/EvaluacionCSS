@@ -3,7 +3,20 @@ body {
   margin: 0 5%;
   font-family: 'dancing script',cursive;
   background-color: #02010a;
+  animation: entrada 2s;
 
+}
+
+@keyframes entrada {
+  0% {
+margin-top: 150%
+}
+60% {
+margin-top: -5%
+}
+100% {
+margin-top: 0%
+}
 }
 
 #contenido {
@@ -26,7 +39,7 @@ img {
 
 header {
   width: 100%;
-  height: 70px;
+  height: 95px;
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   animation: slidein 1s;
@@ -34,110 +47,253 @@ header {
 
 header h1 {
   float: left;
-  margin-left: 3px;
+  margin-left: 10px;
+  margin-top: 25px;
   padding: 0;
   color: white;
   text-shadow: 2px 2px 2px #02010a;
-  font-size: 1.5em;
-  letter-spacing: .1em;
+  font-size: 2em;
+  letter-spacing: 2px;
+
 }
 
 nav {
   float: right;
-  width: 40%;
+  margin-top: 15px;
+  width: 33%;
 }
+
 ul{
   margin: 0;
   overflow: none;
   height: 100%;
   list-style-type: none;
 
+
+
 }
 
 li{
-  margin: 0;
+  margin-right: 20px;
   padding: 20px 0;
   float: left;
   display: block;
-  color: white;
   font-size: 1.5em;
   text-decoration-line: none;
+
+}
+
+li a {
+  color: white;
+
+}
+
+li a.sinlinea:link {
+  text-decoration: none;
 }
 
 
 
-#contenedor1 {
+article {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  padding: 2%;
+  text-align: center;
+  height: 350px;
+}
+
+#principal {
   width: 100%;
-
+  height: auto;
   background-color: #82c3a6;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
+
 }
 
-#contenedor1 img {
+#principal img {
   width: 90%;
-  height: 400px;
   margin-bottom: 5px;
   margin-top: 10px;
 
 }
 
-#contenedor2 {
-  display: flex;
-	flex-flow: row;
-	background-color: #d5c75f;
-	width: 100%;
+
+#imagenizq {
+  width: 50%;
+  height: 330px;
+  background-color: #d5c75f;
 
 }
 
-#contenedor2 .izquierda {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  float: left;
-  display: block;
-  width: 91%;
-  height: 250px;
+
+
+#imagenizq .izquierda {
+  width: 90%;
+  height: 90%;
+  transition: transform, 1s;
+
 }
 
-#contenedor2 .derecha {
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  float: right;
-  display: block;
-  width: 114%;
-  height: 250px;
+#imagenizq img:hover {
+  transform: rotate(10deg);
+  border: 2px solid #82c3a6;
+
+}
+
+#imagender {
+  width: 50%;
+  height: 330px;
+  background-color: #d5c75f;
+
+}
+
+#imagender .derecha {
+  width: 90%;
+  height: 90%;
+  transition: transform, 1s;
+}
+
+#imagender img:hover {
+  transform: translate(20px, -5px);
+  border: 2px solid #82c3a6;
+}
+
+h3 {
+  margin: auto;
 }
 
 #contenedor3 {
   display: flex;
-  flex-direction: row;
-  justify-content:space-around;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
   background-color: #C6d5c5;
   width: 100%;
-
   border-radius: 0px 0px 10px 10px;
   font-size: 1em;
 
 
 }
-#contenedor3 h1 {
-  text-align: center;
-}
+
 
 #contenedor3 .boxfooter {
+  display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
   width: 25%;
-  margin: 10px;
-  border: 1px solid black;
+  margin: 20px;
 
 
 }
-
-#contenedor3 img {
-  width: 30%;
-
+.social {
+  display: flex;
+	flex-direction: row;
+	width: 25%;
+  margin: 0;
+  margin-bottom: 10px;
 
 }
+
+.social img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20%;
+  box-shadow: none;
+}
+
+.social a{
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width:900px){
+  header{
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+
+  }
+
+  nav {
+    width: 100%;
+    margin-bottom: 10px;
+
+
+  }
+
+  ul {
+
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  header h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2em;
+
+
+  }
+
+  #contenido{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  #principal {
+
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+  #imagenizq {
+
+    width: 100%;
+    height: auto;
+
+  }
+
+  #imagender {
+
+    width: 100%;
+    height: auto;
+
+  }
+
+  #contenedor3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #contenedor3 .boxfooter {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 10px, auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: left;
+
+
+
+  }

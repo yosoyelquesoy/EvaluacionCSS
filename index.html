@@ -13,34 +13,32 @@
         <h1>Comenzando con la fotografía</h1>
         <nav>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Paisajes.html">Paisajes</a></li>
-            <li><a href="Retratos.html">Retratos</a></li>
+            <li id="index"><a href="index.html" class="sinlinea">Inicio</a></li>
+            <li id="paisajes"><a href="Paisajes.html">Paisajes</a></li>
+            <li id="retratos"><a href="Retratos.html">Retratos</a></li>
           </ul>
         </nav>
       </header>
       <div id="contenedor1">
-        <figure align="center">
-          <img src="img/principal.jpg" alt="Principal">
-          <figcaption><strong>Torre Eiffel - París, Francia</strong></figcaption>
-        </figure>
-      </div>
-      <div id="contenedor2">
-        <figure align="center">
-          <img class="izquierda" src="img/paisajeindex.jpg" alt="Paisajes">
-          <figcaption><strong>Paisajes</strong></figcaption>
-        </figure>
-        <figure align="center">
-          <img class="derecha" src="img/retratoindex.jpg" alt="Retratos">
-          <figcaption><strong>Retratos</strong></figcaption>
-        </figure>
-
+        <section>
+          <article class="" id="principal">
+            <img src="img/principal.jpg" alt="Principal">
+          </article>
+          <article class="" id="imagenizq">
+            <img class="izquierda" src="img/paisajeindex.jpg" alt="Paisajes">
+            <h3><strong>Paisajes</strong></h3>
+          </article>
+          <article class="" id="imagender">
+            <img class="derecha" src="img/retratoindex.jpg" alt="Retratos">
+            <h3><strong>Retratos</strong></h3>
+          </article>
+        </section>
       </div>
       <footer>
         <div id="contenedor3">
           <div class="boxfooter">
             <h1>Contacto</h1>
-            <p><strong>Correo electrónico:</strong><br>industriasturisticas@gmail.com<br><strong>Domicilio:</strong><br>
+            <p><strong>Correo electrónico:</strong><br><a href="industriasturisticas@gmail.com?subject=feedback">industriasturisticas@gmail.com</a><br><strong>Domicilio:</strong><br>
             Blvrd. Benito Juarez No. 87, Colonia las Villas, Guaymas, Sonora, México.<br><strong>Teléfono:</strong><br>622-222-8770.</p>
           </div>
           <div class="boxfooter">
@@ -49,12 +47,16 @@
           </div>
           <div class="boxfooter">
             <h1>Redes Sociales</h1>
-              <a href="https://www.facebook.com/" target="_blank" alt="Facebook">
-              <img src="img/facebook.png" alt="Facebook">
-              </a>
-              <a href="https://www.twitter.com"><img src="img/twitter.png"  alt="Twitter"></a>
-
-              <a href="https://plus.google.com/"><img src="img/google.png" alt="Google+"></a>
+              <div class="social">
+                <a href="https://www.facebook.com/" target="_blank" alt="Facebook"><img src="img/facebook.png" alt="Facebook" align="left"></a><a href="https://www.facebook.com/" target="_blank" alt="Facebook">industrias.turisticas
+                </a>
+              </div>
+              <div class="social">
+                <a href="https://www.twitter.com" target="_blank" alt="Twitter"><img src="img/twitter.png"  alt="Twitter" align="left"></a><a href="https://www.twitter.com" target="_blank" alt="Twitter">@industriasturisticas</a>
+              </div>
+              <div class="social">
+                <a href="https://plus.google.com/" target="_blank" alt="Google+"><img src="img/google.png" alt="Google+" align="left"></a><a href="https://plus.google.com/" target="_blank" alt="Google+">industriasturisticas</a>
+              </div>
           </div>
           <div class="boxfooter">
             <h1>Derechos</h1>
