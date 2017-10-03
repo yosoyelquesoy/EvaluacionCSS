@@ -177,10 +177,7 @@ h3 {
 
 
 #contenedor3 .boxfooter {
-  display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
+
   width: 25%;
   margin: 20px;
 
@@ -190,8 +187,7 @@ h3 {
   display: flex;
 	flex-direction: row;
 	width: 25%;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 5%;
 
 }
 
@@ -285,15 +281,6 @@ h3 {
   }
 
   #contenedor3 .boxfooter {
-    width: 100%;
-    justify-content: center;
-    padding: 0;
-    margin: 10px, auto;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    text-align: left;
-
-
+    width: 90%;
 
   }
